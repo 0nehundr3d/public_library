@@ -21,7 +21,7 @@ describe Book do
 
     describe '#publication_year' do
         it 'can return the year it was published' do
-            expect(@book.publcation_year).to eq("1960")
+            expect(@book.publication_year).to eq("1960")
         end
     end
 end
