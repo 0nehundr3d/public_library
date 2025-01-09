@@ -6,4 +6,8 @@ class Book
         @author = "#{book_params[:author_first_name]} #{book_params[:author_last_name]}"
         @publication_date = book_params[:publication_date]
     end
+
+    def publication_year
+        @publication_date.split(" ")[-1]
+    end
 end
