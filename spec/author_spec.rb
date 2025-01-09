@@ -10,6 +10,7 @@ describe Author do
         })
 
         @jane_eyre = @charlotte_bronte.write("Jane Eyre", "October 16, 1847")
+        @villette = @charlotte_bronte.write("Villette", "1853")
     end
 
     describe '#initalize' do
@@ -24,6 +25,10 @@ describe Author do
         it 'can write a book' do
             expect(@jane_eyre).to be_a(Book)
             expect(@jane_eyre.title).to eq("Jane Eyre")
+        end
+
+        it 'adds written books to an array' do
+            expect(@charlotte_bronte.books).to eq([@jane_eyre, @villette])
         end
     end
 end
