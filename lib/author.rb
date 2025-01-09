@@ -12,11 +12,13 @@ class Author
     end
 
     def write(title, date)
-        Book.new({
+        @books << Book.new({
             title: title,
             author_first_name: @first_name,
             author_last_name: @last_name,
             publication_date: date
         })
+
+        @books[-1]
     end
 end
