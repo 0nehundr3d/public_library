@@ -18,4 +18,10 @@ describe Book do
             expect(@book.author).to eq("Harper Lee")
         end
     end
+
+    describe '#publication_year' do
+        it 'can return the year it was published' do
+            expect(@book.publcation_year).to eq("1960")
+        end
+    end
 end
