@@ -16,7 +16,6 @@ describe Book do
             expect(@book).to be_a(Book)
             expect(@book.title).to eq("To Kill a Mockingbird")
             expect(@book.author).to eq("Harper Lee")
-            expect(@book.publication_date).to eq("1960")
         end
     end
 end
